@@ -13,10 +13,11 @@ dt = 1.0E-3
 rho = np.loadtxt(output_file)[:, 0]
 p = np.loadtxt(output_file)[:, 1]
 zeta = np.loadtxt(output_file)[:, 2]
+t = np.loadtxt(output_file)[:, 3]
 
 # plot rho
 fig, ax = plt.subplots()
-ax.plot(rho)
+ax.plot(t,rho)
 ax.set(xlabel='time (s)', ylabel='reactivity rho',
        title='reactivity rho v.s. time step')
 ax.grid()
@@ -25,7 +26,7 @@ fig.savefig("./figures/PKE_sol_rho.png")
 
 # plot p
 fig, ax = plt.subplots()
-ax.plot(p)
+ax.plot(t,p)
 ax.set(xlabel='time (s)', ylabel='power p',
        title='power p v.s. time step')
 ax.grid()
@@ -34,7 +35,7 @@ fig.savefig("./figures/PKE_sol_p.png")
 
 # plot zeta
 fig, ax = plt.subplots()
-ax.plot(zeta)
+ax.plot(t,zeta)
 ax.set(xlabel='time (s)', ylabel='zeta',
        title='zeta v.s. time step')
 ax.grid()
