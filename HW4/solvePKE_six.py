@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# This code correspond to the Part B and C-1 of HW4
+# This code correspond to the Part C-2 of HW4
 
 import numpy as np
 
@@ -14,10 +14,17 @@ LAMBD = 2.6E-15
 LAMBD_prev = 2.6E-15
 LAMBD0 = 2.6E-15
 
-beta_eff = 0.0076
-beta_eff_prev = 0.0076
-lambd = 0.49405
-lambd_prev = 0.49405
+# one-group beta and lambd
+# beta_eff = 0.0076
+# beta_eff_prev = 0.0076
+# lambd = 0.49405
+# lambd_prev = 0.49405
+
+# six-group beta and lambd
+beta  = [0.02584,0.152,0.13908, 0.30704, 0.1102, 0.02584]
+beta_eff_prev = beta
+lambd = [0.0128, 0.0318, 0.119, 0.3181, 1.4027, 3.9286]
+lambd_prev = lambd 
 
 alpha = 0
 lambd_H = 0

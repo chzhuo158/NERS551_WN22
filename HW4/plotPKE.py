@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 output_file = "PKE_sol.out"
 
 # time step
-dt = 1.0E-3
+dt = 1.0E-5
 
 rho = np.loadtxt(output_file)[:, 0]
 p = np.loadtxt(output_file)[:, 1]
