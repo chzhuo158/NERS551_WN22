@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 # output file name
-output_file = "PKE_sol.out"
+output_file = "PKE_sol_mg.out"
 
 # time step
 dt = 1.0E-5
